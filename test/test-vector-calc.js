@@ -26,7 +26,7 @@ describe('Vector calculator', ()=>{
       let x = 5;
       
       it('should scalar the vectors', ()=>{
-        assert.deepEqual({x: 20, y: 15}, VectorCalculator.scalar(v1, v2));
+        assert.deepEqual({x: 20, y: 15}, VectorCalculator.scalar(v1, x));
       })
     })
 
@@ -35,7 +35,7 @@ describe('Vector calculator', ()=>{
       let v2 = {x: 1, y: 3};
       
       it('should scalar the vectors', ()=>{
-        assert.deepEqual({x: 20, y: 15}, VectorCalculator.dot(v1, v2));
+        assert.deepEqual({x: 4, y: 9}, VectorCalculator.dot(v1, v2));
       })
     })
 
